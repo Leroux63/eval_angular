@@ -1,0 +1,19 @@
+<div class="container">
+    <table class="table table-bordered table-striped table-hover table-dark">
+        <thead>
+            <tr>
+                <th class="text-center">Nom</th>
+                <th class="text-center">Code</th>
+                <th class="text-center">Code Région</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of arrayDep">
+                <th class="text-center">{{item.nom}}</th>
+                <th [ngClass]=" { ' red ' : item.code == 63}" class="text-center">{{item.code}}</th>
+                <th class="text-center">{{item.codeRegion}}</th>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
